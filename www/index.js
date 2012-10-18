@@ -3,10 +3,10 @@ document.addEventListener("deviceready", function(){
      console.log("Executing document ready.");
      window.alert('ready');
      appjet.onLoadStart = function() {
-    	 $("#go").button('loading');
+    	 //$("#go").button('loading');
      };
      appjet.onLoadEnd = function() {
-    	 $("#go").button('reset');
+    	// $("#go").button('reset');
      };
      
      $("#go").click(function(){
@@ -18,7 +18,7 @@ document.addEventListener("deviceready", function(){
         }
         
         var data = { query : query };
-        console.log("Requesting product data.", data);
+        console.log("Requesting product data.");
         
 		$().server(data, function(data){
 			if(validate(data)) {
@@ -31,7 +31,7 @@ document.addEventListener("deviceready", function(){
 				return (data && data.query && data.query != '' && data.query.length<20);
 			}
     	}).complete(function(result) {
-            console.log("Product data received.", result);
+            console.log("Product data received.");
             $(".products").empty();
             $(result).each(function(index, product){
                 insert(product);
