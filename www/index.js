@@ -70,7 +70,7 @@ var appjet = (function(){
 			});
 			
 			function resolveDomain() {
-				if(window.PhoneGap) {
+				if(window.cordova) {
 					domain = "http://www.pixeljet.net/";
 				} else {
 					var host = window.location.hostname;
