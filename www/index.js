@@ -71,7 +71,7 @@ var appjet = (function(){
 			
 			function resolveDomain() {
 				if(window.cordova) {
-					domain = "http://www.pixeljet.net/";
+					domain = "http://regression.pixeljet.net/";
 				} else {
 					var host = window.location.hostname;
 					domain = "http://" + host + "/";
