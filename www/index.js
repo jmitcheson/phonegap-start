@@ -81,6 +81,7 @@ var appjet = (function(){
 			function resolveEndpoints() {
 				resolveDomain();
 				endpoint = domain + "script/execute";
+				window.alert('using endpoint ' + endpoint);
 			}
 		}
 	}
