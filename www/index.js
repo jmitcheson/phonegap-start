@@ -10,7 +10,7 @@ document.addEventListener("deviceready", function(){
      };
      
      $("#go").click(function(){
-         window.alert('go');
+        window.alert('go');
     	// If deploying this for real, you will want some better input validation! This only checks string length
         var query = $("#query").val();
         if(query.length<1) {
